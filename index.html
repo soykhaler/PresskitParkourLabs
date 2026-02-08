@@ -58,10 +58,27 @@
       margin-top: 30px;
     }
 
-    .media-grid img, .media-grid video, iframe {
+    .media-grid img, .media-grid video {
       width: 100%;
       border-radius: 8px;
       display: block;
+    }
+
+    .video-wrapper {
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%; /* 16:9 */
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
     }
 
     .logos {
@@ -142,9 +159,30 @@
 </section>
 
 <section>
+  <h2>Animated GIFs</h2>
+  <div class="media-grid">
+    <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExenptcnVuY2RlN2I3b2V4OG9maWVpdGZqdHNpd2dpaWp4bGFnM242ciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/zmmckMOEcutcZq8uHU/giphy.gif" alt="Parkour Labs Gameplay GIF">
+    <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGF1ODIxMWdha2YxNXA5ajBtbmgyMm5hano5NzRxenZ2aGV3bmlsayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/mcLpVQdyVgePXoHetp/giphy.gif" alt="Parkour Labs Gameplay GIF">
+  </div>
+</section>
+
+<section>
+  <h2>Screenshots</h2>
+  <div class="media-grid">
+    <img src="https://github.com/soykhaler/PresskitParkourLabs/blob/main/res/1.png?raw=true" alt="Parkour Labs Screenshot 1">
+    <img src="https://github.com/soykhaler/PresskitParkourLabs/blob/main/res/2.png?raw=true" alt="Parkour Labs Screenshot 2">
+    <img src="https://github.com/soykhaler/PresskitParkourLabs/blob/main/res/3.png?raw=true" alt="Parkour Labs Screenshot 3">
+    <img src="https://github.com/soykhaler/PresskitParkourLabs/blob/main/res/4.png?raw=true" alt="Parkour Labs Screenshot 4">
+    <img src="https://github.com/soykhaler/PresskitParkourLabs/blob/main/res/5.png?raw=true" alt="Parkour Labs Screenshot 5">
+  </div>
+</section>
+
+<section>
   <h2>Trailers</h2>
   <div class="media-grid">
-    <iframe src="https://www.youtube.com/embed/v1cdJdXMZ7Q" title="Parkour Labs Trailer" frameborder="0" allowfullscreen></iframe>
+    <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/v1cdJdXMZ7Q" title="Parkour Labs Trailer" allowfullscreen></iframe>
+    </div>
   </div>
 </section>
 
